@@ -1,0 +1,26 @@
+* {
+  letter-spacing: 1.15px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 10%;
+}
+
+h2 {
+  margin: 10%;
+}
+
+p {
+  margin: 10%;
+}
+
+ol {
+  margin: 10%;
+}
+
+li {
+  margin: 5%;
+}
