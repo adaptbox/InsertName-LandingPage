@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+  // spam counter to avoid multisends (>5)
+  var spamCounter = 0;
+
+  // highlight tags dynamically
   function highlightTag(tagNum) {
     for (var i = 1; i <= 4; i++) {
       $('.js-tag-' + i).css("color", "black");
@@ -6,6 +11,7 @@ $(document).ready(function() {
     $('.js-tag-' + tagNum).css("color", "white")
   }
 
+  // show pages dynamically
   function showPage(pageNum) {
     for (var i = 0; i <= 4; i++) {
       $('.js-button-' + i).hide();
@@ -15,6 +21,7 @@ $(document).ready(function() {
     $('.js-description-' + pageNum).fadeIn();
   }
 
+  // email validation
   function isValidEmail(email) {
     if (email.indexOf("@") === -1) {
       return false;
@@ -25,6 +32,7 @@ $(document).ready(function() {
     return true;
   }
 
+  // ajax email sending with formspree - good for 1000 free per month
   function sendEmail(email, nameSuggestion) {
     $.ajax({
       // formspree is good for up to 1000 emails per month for free
@@ -35,9 +43,14 @@ $(document).ready(function() {
       },
       dataType: "json"
     });
-    $('.js-user-message').text("Thanks for showing your interest! We'll be in touch.")
+    $('.js-user-message').text("Thanks for showing your interest! We'll be in touch.");
+    spamCounter++;
+    if (spamCounter >= 5) {
+      $('.js-submit-button').prop("disabled", true);
+    }
   }
 
+  // event handlers
   function initializeEventHandlers() {
     $('.js-button-0').on('click', function() {
       highlightTag(1);

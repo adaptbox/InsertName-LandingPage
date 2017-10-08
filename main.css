@@ -99,7 +99,7 @@ li {
   border: 3px solid black;
   border-radius: 10px;
   background-color: #4BCAEE;
-  margin-top: 10px; /* shitty, but works up to large screen sizes */
+  margin-top: 5px; /* shitty, but works up to large screen sizes */
   padding: 3px 5px;
 }
 
@@ -108,7 +108,7 @@ li {
   width: 100%;
   border: 3px solid black;
   border-radius: 10px;
-  margin-top: 10px; /* shitty, but works up to large screen sizes */
+  margin-top: 5px; /* shitty, but works up to large screen sizes */
   padding: 3px 5px;
 }
 
