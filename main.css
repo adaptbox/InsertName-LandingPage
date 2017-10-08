@@ -5,22 +5,111 @@
   padding: 0;
 }
 
+body {
+  background-color: #4BCAEE;
+  color: black;
+}
+
 h1 {
-  margin: 5%;
+  margin: 100px 10%;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Arial Black", sans-serif;
 }
 
 h2 {
-  margin: 5%;
+  margin: 50px 5%;
+  font-family: "Arial Black", sans-serif;
 }
 
 p {
-  margin: 5%;
+  margin: 50px 10%;
+  font-weight: 500;
+  font-size: 1.3em;
 }
 
 ol {
-  margin: 5%;
+  margin: 50px 5%;
 }
 
 li {
-  margin: 3%;
+  margin: 50px 3%;
 }
+
+.js-main-button {
+  display: block;
+  margin: 75px auto;
+  font-family: "Arial Black", sans-serif;
+  font-size: 2.5em;
+  padding: 6px 50px;
+  border-radius: 0;
+  border: 5px solid black;
+  background-color: #4BCAEE;
+  color: black;
+}
+
+.js-main-button:hover {
+  background-color: black;
+  color: #4BCAEE;
+  border: 5px solid #4BCAEE;
+  border-radius: 20px;
+}
+
+/* Breaks responsive */
+/*.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}*/
+
+.js-bottom-row {
+  margin: 50px 10%;
+}
+
+.js-ready-text {
+  text-align: center;
+  font-weight: 500;
+  padding: 20px;
+}
+
+.js-form-container {
+  padding: 20px 5px;
+  text-align: center;
+}
+
+.js-form-container > input {
+  display: block;
+  width: 100%;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: #4BCAEE;
+  margin-top: 13px; /* shitty, but works up to large screen sizes */
+  padding: 0 5px;
+}
+
+.js-form-container > button {
+  display: block;
+  width: 100%;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-top: 13px; /* shitty, but works up to large screen sizes */
+  padding: 0 5px;
+}
+
+.js-form-container > input::placeholder {
+  text-align: center;
+  color: black;
+  font-weight: 500;
+}
+
+.js-form-input {
+  background-color: black;
+  color: #4BCAEE;
+}
+
+.js-form-input:hover {
+  font-weight: 700;
+  color: #4BCAEE;
+}
+
+
