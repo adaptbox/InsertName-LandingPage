@@ -21,7 +21,7 @@ $(document).ready(function() {
       url: "https://formspree.io/adaptboxanalytics@gmail.com",
       method: "POST",
       data: {
-        message: "A new email entry! email: " + email + ", nameSuggestion: " + nameSuggestion
+        message: "EMAIL: " + email + ", NAME_SUGGESTION: " + nameSuggestion
       },
       dataType: "json"
     });
