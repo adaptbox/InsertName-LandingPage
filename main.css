@@ -79,6 +79,7 @@ li {
 
 .s-bottom-row {
   margin: 50px 10%;
+  margin-bottom: 10px;
 }
 
 .s-ready-text {
@@ -150,4 +151,13 @@ li {
   text-align: center;
   padding: 0px 10%;
   margin-bottom: 10px;
+}
+
+.s-user-message {
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 0;
+  font-weight: 700;
+  color: white;
+  font-size: 1.3em;
 }

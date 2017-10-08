@@ -35,6 +35,7 @@ $(document).ready(function() {
       },
       dataType: "json"
     });
+    $('.js-user-message').text("Thanks for showing your interest! We'll be in touch.")
   }
 
   function initializeEventHandlers() {
