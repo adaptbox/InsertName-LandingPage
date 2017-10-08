@@ -117,6 +117,15 @@ li {
   font-weight: 500;
 }
 
+@media (max-width: 991px) {
+  .s-form-container {
+    padding: 0 5px;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+  }
+}
+
 .s-form-input {
   background-color: black;
   color: #4BCAEE;
