@@ -15,6 +15,16 @@ $(document).ready(function() {
     $('.js-description-' + pageNum).fadeIn();
   }
 
+  function isValidEmail(email) {
+    if (email.indexOf("@") === -1) {
+      return false;
+    }
+    if (email.indexOf(".") === -1) {
+      return false;
+    }
+    return true;
+  }
+
   function sendEmail(email, nameSuggestion) {
     $.ajax({
       // formspree is good for up to 1000 emails per month for free
@@ -56,8 +66,9 @@ $(document).ready(function() {
     $('.js-submit-button').on('click', function() {
       var email = $('.js-email-input').val();
       var name = $('.js-name-input').val();
-      if (!email) {
-        alert("Email is required!");
+      if (!email || !isValidEmail(email)) {
+        alert("Please ensure that you have entered a valid email. We'll make it worth your while!");
+        return;
       }
       sendEmail(email, name);
     });
