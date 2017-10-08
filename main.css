@@ -36,7 +36,16 @@ li {
   margin: 50px 3%;
 }
 
-.js-main-button {
+.s-small-button {
+  display: block;
+  margin: auto;
+  font-family: "Arial Black", sans-serif;
+  background-color: #4BCAEE;
+  color: black;
+  text-decoration: underline;
+}
+
+.s-main-button {
   display: block;
   margin: 75px auto;
   font-family: "Arial Black", sans-serif;
@@ -48,7 +57,14 @@ li {
   color: black;
 }
 
-.js-main-button:hover {
+.s-main-button:hover {
+  background-color: black;
+  color: #4BCAEE;
+  border: 5px solid #4BCAEE;
+  border-radius: 20px;
+}
+
+.s-main-button:focus {
   background-color: black;
   color: #4BCAEE;
   border: 5px solid #4BCAEE;
@@ -59,25 +75,24 @@ li {
 /*.vcenter {
   display: inline-block;
   vertical-align: middle;
-  float: none;
 }*/
 
-.js-bottom-row {
+.s-bottom-row {
   margin: 50px 10%;
 }
 
-.js-ready-text {
+.s-ready-text {
   text-align: center;
   font-weight: 500;
   padding: 20px;
 }
 
-.js-form-container {
+.s-form-container {
   padding: 20px 5px;
   text-align: center;
 }
 
-.js-form-container > input {
+.s-form-container > input {
   display: block;
   width: 100%;
   border: 3px solid black;
@@ -87,7 +102,7 @@ li {
   padding: 0 5px;
 }
 
-.js-form-container > button {
+.s-form-container > button {
   display: block;
   width: 100%;
   border: 3px solid black;
@@ -96,20 +111,35 @@ li {
   padding: 0 5px;
 }
 
-.js-form-container > input::placeholder {
+.s-form-container > input::placeholder {
   text-align: center;
   color: black;
   font-weight: 500;
 }
 
-.js-form-input {
+.s-form-input {
   background-color: black;
   color: #4BCAEE;
 }
 
-.js-form-input:hover {
+.s-form-input:hover {
   font-weight: 700;
   color: #4BCAEE;
 }
 
+.s-form-input:focus {
+  font-weight: 700;
+  color: #4BCAEE;
+}
 
+.s-description {
+  text-align: center;
+  font-size: 2em;
+  padding: 0px 10%;
+}
+
+.s-description-small {
+  text-align: center;
+  padding: 0px 10%;
+  margin-bottom: 10px;
+}

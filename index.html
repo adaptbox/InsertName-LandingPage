@@ -15,43 +15,75 @@
 
     <!-- Bootstrap import for styling -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link href="main.css" rel="stylesheet">
   </head>
   <body>
     <!-- Logo/Title -->
-    <h2>
-      [Insert Name Here]
-    </h2>
+    <h2>[Insert Name Here]</h2>
 
     <!-- Tagline -->
     <h1>
-      Snap. Describe. Choose. Fixed.
+      <span class="js-tag-1">Snap.</span>
+      <span class="js-tag-2">Describe.</span>
+      <span class="js-tag-3">Choose.</span>
+      <span class="js-tag-4">Fixed.</span>
     </h1>
 
-    <!-- Pitch -->
-    <p>
+    <!-- text -->
+    <p class="js-main-description js-description-0">
       Fender bender? Scratch? Dents? We’ve all been there before and know how time consuming and
       intimidating it can be to contact body shops for pricing. With [insert name here], simply snap a photo
       of the boo-boo, and we’ll connect you with trusted body shops near you.
     </p>
 
-    <!-- Slideshow Button -->
-    <button class="btn btn-default js-main-button">How it works</button>
+    <p class="s-description js-description-1" style="display: none;">
+      Step 1: Snap a few photos of the damage from various angles.
+    </p>
+    <p class="s-description js-description-2" style="display: none;">
+      Step 2: Describe the damage including vehicle make, model, plus some contact info.
+    </p>
+    <p class="s-description js-description-3" style="display: none;">
+      Step 3: Choose the quote that best suits you.
+    </p>
+    <p class="s-description js-description-4" style="display: none;">
+      Step 4: Get your car fixed!
+    </p>
+    <p class="s-description-small js-description-4" style="display: none;">
+      That's it! After we receive the photos and description, we'll send it off to
+      shops near you for quotes. We never share your contact info until you choose
+      a quote you're happy with. Once connected, you will work directly with the
+      body shop to restore you car to its former glory!
+    </p>
+
+    <!-- Slideshow Buttons -->
+    <button class="btn s-main-button js-button-0">How it works</button>
+    <button class="btn s-main-button js-button-1" style="display: none;">Next</button>
+    <button class="btn s-main-button js-button-2" style="display: none;">Next</button>
+    <button class="btn s-main-button js-button-3" style="display: none;">Next</button>
+    <button class="btn s-small-button js-button-4" style="display: none;">Back to the beginning</button>
 
     <!-- Email signup form -->
-    <div class="js-bottom-row row">
-      <div class="js-ready-text col-md-4 vcenter">
+    <div class="s-bottom-row row">
+      <div class="s-ready-text col-md-4">
         Want to know when it's ready? <u>OR</u> Want to <strong>NAME</strong> us?
       </div>
-      <div class="js-form-container col-md-3 vcenter">
-        <input class="js-email-input" type="text" placeholder="email (required)"/>
+      <div class="s-form-container col-md-3">
+        <input class="js-email-input" type="text" placeholder="email (*)"/>
       </div>
-      <div class="js-form-container js-name-input col-md-3 vcenter">
-        <input class="js-name-input" type="text" placeholder="proposed name (optional)"/>
+      <div class="s-form-container js-name-input col-md-3">
+        <input class="js-name-input" type="text" placeholder="proposed name"/>
       </div>
-      <div class="js-form-container js-submit-form col-md-2 vcenter">
-        <button class="js-form-input btn">Fix it!</button>
+      <div class="s-form-container js-submit-form col-md-2">
+        <button class="s-form-input btn">Fix it!</button>
       </div>
     </div>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
   </body>
 </html>
