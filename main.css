@@ -135,18 +135,21 @@ li {
 }
 
 .s-form-input {
-  background-color: black;
-  color: #4BCAEE;
+  background-color: #EBA353;
+  color: black;
+  font-weight: 700;
 }
 
 .s-form-input:hover {
   font-weight: 700;
-  color: #4BCAEE;
+  background-color: black;
+  color: #EBA353;
 }
 
 .s-form-input:focus {
   font-weight: 700;
-  color: #4BCAEE;
+  background-color: black;
+  color: #EBA353;
 }
 
 .s-description {
