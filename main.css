@@ -126,6 +126,16 @@ li {
   }
 }
 
+@media (min-width: 1671px) {
+  .s-form-container > input {
+    margin-top: 0px;
+  }
+
+  .s-form-container > button {
+    margin-top: 0px;
+  }
+}
+
 .s-form-input {
   background-color: black;
   color: #4BCAEE;
