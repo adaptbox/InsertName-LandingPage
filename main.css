@@ -126,11 +126,11 @@ li {
 
 @media (min-width: 1671px) {
   .s-form-container > input {
-    margin-top: 0px;
+    margin-top: -5px;
   }
 
   .s-form-container > button {
-    margin-top: 0px;
+    margin-top: -5px;
   }
 }
 
