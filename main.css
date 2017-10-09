@@ -61,14 +61,12 @@ li {
   background-color: black;
   color: #4BCAEE;
   border: 5px solid #4BCAEE;
-  border-radius: 20px;
 }
 
 .s-main-button:focus {
   background-color: black;
   color: #4BCAEE;
   border: 5px solid #4BCAEE;
-  border-radius: 20px;
 }
 
 /* Breaks responsive */
