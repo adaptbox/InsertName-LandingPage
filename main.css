@@ -76,7 +76,7 @@ li {
 }*/
 
 .s-bottom-row {
-  margin: 50px 10%;
+  margin: 0 10%;
   margin-bottom: 10px;
 }
 
@@ -166,9 +166,17 @@ li {
 
 .s-user-message {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   padding: 0;
   font-weight: 700;
   color: white;
   font-size: 1.3em;
+}
+
+.s-footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid #14a9d2;
 }
