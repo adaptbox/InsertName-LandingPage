@@ -132,6 +132,11 @@ li {
     width: 200px;
     margin: auto;
   }
+  .s-ready-text {
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 991px) {
