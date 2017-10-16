@@ -16,9 +16,11 @@ $(document).ready(function() {
     for (var i = 0; i <= 4; i++) {
       $('.js-button-' + i).hide();
       $('.js-description-' + i).hide();
+      $('.js-image-' + i).hide();
     }
     $('.js-button-' + pageNum).fadeIn();
     $('.js-description-' + pageNum).fadeIn();
+    $('.js-image-' + pageNum).fadeIn();
   }
 
   // email validation
@@ -43,9 +45,10 @@ $(document).ready(function() {
       },
       dataType: "json"
     });
-    $('.js-user-message').text("Thanks for showing your interest! We'll be in touch.");
+    $(".js-submit-button").css("background-color", "#00cc00")
+                          .text("Success!");
     spamCounter++;
-    if (spamCounter >= 5) {
+    if (spamCounter >= 3) {
       $('.js-submit-button').prop("disabled", true);
     }
   }

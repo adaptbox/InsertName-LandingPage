@@ -11,7 +11,8 @@ body {
 }
 
 h1 {
-  margin: 100px 10%;
+  margin: 50px 10%;
+  margin-bottom: 50px;
   font-weight: 700;
   text-align: center;
   font-family: "Arial Black", sans-serif;
@@ -23,7 +24,7 @@ h2 {
 }
 
 p {
-  margin: 50px 10%;
+  margin: 25px 10%;
   font-weight: 500;
   font-size: 1.3em;
 }
@@ -47,7 +48,7 @@ li {
 
 .s-main-button {
   display: block;
-  margin: 75px auto;
+  margin: 40px auto;
   font-family: "Arial Black", sans-serif;
   font-size: 2.5em;
   padding: 6px 50px;
@@ -77,26 +78,25 @@ li {
 
 .s-bottom-row {
   margin: 0 10%;
-  margin-bottom: 10px;
 }
 
 .s-ready-text {
   text-align: center;
   font-weight: 500;
-  padding: 20px;
+  padding: 10px;
 }
 
 .s-form-container {
-  padding: 20px 5px;
+  padding: 10px 5px;
   text-align: center;
+  color: black;
 }
 
 .s-form-container > input {
   display: block;
   width: 100%;
   border: 3px solid black;
-  border-radius: 10px;
-  background-color: #4BCAEE;
+  background-color: white;
   margin-top: 5px; /* shitty, but works up to large screen sizes */
   padding: 3px 5px;
 }
@@ -105,7 +105,6 @@ li {
   display: block;
   width: 100%;
   border: 3px solid black;
-  border-radius: 10px;
   margin-top: 5px; /* shitty, but works up to large screen sizes */
   padding: 3px 5px;
 }
@@ -116,20 +115,29 @@ li {
   font-weight: 500;
 }
 
+.s-description {
+  text-align: center;
+  font-size: 2em;
+}
+
+.s-description-small {
+  text-align: center;
+  padding: 0px 10%;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 600px) {
   .s-main-button {
     padding: 6px 10px;
     border: 5px solid black;
-  }
-  .s-user-message {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   .s-description {
-    font-size: 1.5em;
+    padding: 0px 5%;
   }
   .s-form-container {
     padding: 0 5px;
-    width: 200px;
+    width: 250px;
     margin: auto;
   }
   .s-ready-text {
@@ -140,10 +148,22 @@ li {
 }
 
 @media (min-width: 601px) and (max-width: 991px) {
+  .s-main-button {
+    font-size: 1.5em;
+  }
   .s-form-container {
     padding: 0 5px;
     width: 300px;
     margin: auto;
+  }
+  .s-description {
+    padding: 0px 15%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1670px) {
+  .s-description {
+    padding: 0px 20%;
   }
 }
 
@@ -151,9 +171,11 @@ li {
   .s-form-container > input {
     margin-top: -5px;
   }
-
   .s-form-container > button {
     margin-top: -5px;
+  }
+  .s-description {
+    padding: 0px 30%;
   }
 }
 
@@ -165,35 +187,14 @@ li {
 
 .s-form-input:hover {
   font-weight: 700;
-  background-color: black;
-  color: #EBA353;
+  background-color: #00cc00;
+  color: black;
 }
 
 .s-form-input:focus {
   font-weight: 700;
-  background-color: black;
-  color: #EBA353;
-}
-
-.s-description {
-  text-align: center;
-  font-size: 2em;
-  padding: 0px 10%;
-}
-
-.s-description-small {
-  text-align: center;
-  padding: 0px 10%;
-  margin-bottom: 10px;
-}
-
-.s-user-message {
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 0;
-  font-weight: 700;
-  color: white;
-  font-size: 1.3em;
+  background-color: #00cc00;
+  color: black;
 }
 
 .s-footer {
@@ -202,6 +203,50 @@ li {
   right: 0;
   bottom: 0;
   border-top: 1px solid #14a9d2;
-  background-color: #2dc2eb;
+  /*background-color: #2dc2eb;*/
+  background-color: #262626;
+  color: white;
   z-index: 1000;
+}
+
+.s-image {
+  width: 100%;
+  height: 100%;
+}
+
+.s-center-img {
+  float: none;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 991px) {
+  .s-footer {
+    padding-bottom: 10px;
+  }
+}
+
+figcaption {
+  text-align: center;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+@media (max-width: 380px) {
+  figcaption {
+    display: none;
+  }
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
 }
