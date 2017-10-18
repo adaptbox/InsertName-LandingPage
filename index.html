@@ -21,6 +21,7 @@
 
     <!-- Custom CSS -->
     <link href="main.css" rel="stylesheet">
+    <link href="animations.css" rel="stylesheet">
   </head>
   <body>
     <!-- Logo/Title -->
@@ -83,34 +84,34 @@
 
     <div class="js-image-1" style="display: none;">
       <div class="s-center-img col-xs-3 col-md-2">
-        <img class="s-image" src="images/step_1_square_800.png"/>
+        <img id="photo" class="s-image" src="images/step_1_square_800.png"/>
       </div>
     </div>
 
     <div class="js-image-2" style="display: none;">
       <div class="s-center-img col-xs-3 col-md-2">
-        <img class="s-image" src="images/step_2_square_800.png"/>
+        <img id="form" class="s-image" src="images/step_2_square_800.png"/>
       </div>
     </div>
 
     <div class="js-image-3" style="display: none;">
       <div class="s-center-img col-xs-3 col-md-2">
-        <img class="s-image" src="images/step_3_square_800.png"/>
+        <img id="quote" class="s-image" src="images/step_3_square_800.png"/>
       </div>
     </div>
 
-    <div class="js-image-4" style="display: none;">
+    <div id="car" class="js-image-4" style="display: none;">
       <div class="s-center-img col-xs-3 col-md-2">
         <img class="s-image" src="images/step_4_square_800.png"/>
       </div>
     </div>
 
     <!-- Slideshow Buttons -->
-    <button class="btn s-main-button js-button-0">How it works</button>
+    <button id="main" class="btn s-main-button js-button-0">How it works</button>
     <button class="btn s-main-button js-button-1" style="display: none;">Next</button>
     <button class="btn s-main-button js-button-2" style="display: none;">Next</button>
     <button class="btn s-main-button js-button-3" style="display: none;">Next</button>
-    <button class="btn s-small-button js-button-4" style="display: none;">Back to the beginning</button>
+    <button class="btn s-main-button js-button-4" style="display: none;">Back to the beginning</button>
 
     <div style="padding-bottom: 400px;"></div>
     <!-- Email signup form -->
