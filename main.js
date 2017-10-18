@@ -91,5 +91,23 @@ $(document).ready(function() {
     });
   }
 
+  function preloadImages() {
+    var img1 = new Image();
+    var img2 = new Image();
+    var img3 = new Image();
+    var img4 = new Image();
+    var img5 = new Image();
+    var img6 = new Image();
+    var img7 = new Image();
+    img1.src = "images/convenience_square_512.png";
+    img2.src = "images/free_square_512.png";
+    img3.src = "images/lock_square_512.png";
+    img4.src = "images/step_1_square_800.png";
+    img5.src = "images/step_2_square_800.png";
+    img6.src = "images/step_3_square_800.png";
+    img7.src = "images/step_4_square_800.png";
+  }
+
   initializeEventHandlers();
+  preloadImages();
 });
