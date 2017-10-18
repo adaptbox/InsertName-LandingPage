@@ -473,21 +473,21 @@ figcaption {
 }
 
 @-moz-keyframes move {
-  from { transform: translate(-80%,0); }
+  from { transform: translate(80%,0); }
   to { transform: translate(0,0); }
 }
 
 @-webkit-keyframes move {
-  from { transform: translate(-80%,0); }
+  from { transform: translate(80%,0); }
   to { transform: translate(0,0); }
 }
 
 @-o-keyframes move {
-  from { transform: translate(-80%,0); }
+  from { transform: translate(80%,0); }
   to { transform: translate(0,0); }
 }
 
 @keyframes move {
-  from { transform: translate(-80%,0); }
+  from { transform: translate(80%,0); }
   to { transform: translate(0,0); }
 }
