@@ -18,9 +18,9 @@ $(document).ready(function() {
       $('.js-description-' + i).hide();
       $('.js-image-' + i).hide();
     }
-    $('.js-button-' + pageNum).fadeIn();
-    $('.js-description-' + pageNum).fadeIn();
-    $('.js-image-' + pageNum).fadeIn();
+    $('.js-button-' + pageNum).show();
+    $('.js-description-' + pageNum).show();
+    $('.js-image-' + pageNum).show();
   }
 
   // email validation
