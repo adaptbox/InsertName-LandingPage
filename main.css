@@ -253,12 +253,13 @@ figcaption {
 
 
 /* shaking for main button */
-#main {
+/*#main {
   -webkit-animation: shake 1s infinite; /* Safari 4+ */
   -moz-animation:    shake 1s infinite; /* Fx 5+ */
   -o-animation:      shake 1s infinite; /* Opera 12+ */
   animation:         shake 1s infinite; /* IE 10+, Fx 29+ */
 }
+
 
 @-moz-keyframes shake {
   10%, 90% {
