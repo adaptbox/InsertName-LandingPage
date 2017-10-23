@@ -323,10 +323,10 @@ figcaption {
 
 /* move car across screen */
 #car {
-  -webkit-animation: move 3s; /* Safari 4+ */
-  -moz-animation:    move 3s; /* Fx 5+ */
-  -o-animation:      move 3s; /* Opera 12+ */
-  animation:         move 3s; /* IE 10+, Fx 29+ */
+  -webkit-animation: move 1s; /* Safari 4+ */
+  -moz-animation:    move 1s; /* Fx 5+ */
+  -o-animation:      move 1s; /* Opera 12+ */
+  animation:         move 1s; /* IE 10+, Fx 29+ */
 }
 
 @-moz-keyframes move {
